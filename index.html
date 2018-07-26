@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>M3DL3Y</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700%7cSource+Sans+Pro:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="font/fonts.css" type="text/css" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
+	<!-- RS5.0 Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Jquery smooth animation script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Add smooth scrolling to EP class
+			$(".EP").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function() {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="site-header">
+		<form action="#" id="search-header" name="search-header">
+			<input type="search" name="search" placeholder="Type and Hit Enter..">
+			<button>Search</button>
+		</form>
+		<div class="container nav-wrapper">
+			<!-- Logo -->
+			<div class="site-branding">
+				<a href="index.html">
+					<span class="first-word colored">M3DL3Y</span>
+				</a>
+			</div>
+			<!-- Main Mneu -->
+			<nav id="site-navigation" class="site-navigation">
+				<ul id="main-menu">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="has-child">
+						<a href="#">About</a>
+						<ul class="submenu">
+							<li class="has-child">
+								<a href="#">Biography</a>
+								<ul class="submenu">
+									<li><a href="biography-dan.html">Dan</a></li>
+									<li><a href="biography-bill.html">Bill</a></li>
+								</ul>
+						</ul>
+						</li>
+						<li class="">
+							<a href="#">Music</a>
+						</li>
+						<li class="">
+							<a href="video-gallery.html">Video Gallery</a>
+						</li>
+						<li class="has-child">
+							<a href="#">Out Now!</a>
+							<ul class="submenu">
+								<li><a href="out-now.html">Withdrawn</a></li>
+								<li><a href="coming-soon.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Nav -->
+			<div class="extra-nav">
+				<button id="search-toggle"><i class="fa fa-search"></i></button>
+				<button id="menu-toggle"><i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+	</header>
+
+
+
+	<!-- Site Content -->
+	<div class="site-content">
+
+		<!-- Main Slider -->
+		<div class="rev_slider_wrapper">
+			<div id="main-slider" class="rev_slider" data-version="5.0">
+				<ul>
+					<!-- Slide 1 -->
+					<li data-transition="fadefromleft" data-thumbnail="img/dj1.jpeg">
+						<!-- Main Image -->
+						<img src="img/dj1.jpeg" alt="">
+						<!-- Layer 1 -->
+						<div class="tp-caption big-caption tp-resizeme" id="slide-01-layer-01" data-x="center" data-hoffset="0" data-y="top" data-voffset="240" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+						 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="700" data-responsive_offset="on"><span>OUT NOW! ADRIFT EP</span>
+						</div>
+
+						<!--Layer 2 -->
+						<div class="tp-caption normal-caption bordered-caption tp-resizeme" id="slide-01-layer-02" data-x="center" data-hoffset="0" data-y="top" data-voffset="295" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+						 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="700" data-responsive_offset="on"><span>M3DL3Y</span>
+						</div>
+
+						<!-- Layer 3 -->
+						<a class="EP" href="#EP">
+							<div class="tp-caption btn big EP" id="slide-01-layer-03" data-x="center" data-hoffset="0" data-y="top" data-voffset="370" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+							 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"#"}]' data-start="900" data-responsive_offset="on">Check it out!
+							</div>
+						</a>
+
+					</li>
+					<!-- Slide 2 -->
+					<li data-transition="fadefromleft" data-thumbnail="img/dj2.jpeg">
+						<!-- Main Image -->
+						<img src="img/dj2.jpeg" alt="Band Photo">
+						<!-- Layer 1 -->
+						<div class="tp-caption big-caption tp-resizeme" id="slide-01-layer-01" data-x="center" data-hoffset="0" data-y="top" data-voffset="240" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+						 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="700" data-responsive_offset="on"><span>Horizon - Withdrawn</span>
+						</div>
+
+						<!--	Layer 2 -->
+						<div class="tp-caption normal-caption bordered-caption tp-resizeme" id="slide-01-layer-02" data-x="center" data-hoffset="0" data-y="top" data-voffset="295" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+						 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="700" data-responsive_offset="on"><span>M3DL3Y Remix</span>
+						</div>
+
+						<!-- 	Layer 3-->
+						<div class="tp-caption btn big" id="slide-01-layer-03" data-x="center" data-hoffset="0" data-y="top" data-voffset="370" data-width="['none']" data-height="['none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+						 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"out-now.html"}]' data-start="900" data-responsive_offset="on">Check it out!
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Music Player -->
+		<div class="home-player-wrapper">
+			<div class="container relative-pos">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+					<div class="jp-type-playlist">
+						<div class="jp-gui jp-interface left-controls">
+							<div class="jp-controls">
+								<button class="jp-previous" tabindex='0'><i class="fa fa-backward"></i></button>
+								<button class="jp-play" tabindex='0'><i class="fa fa-play"></i></button>
+								<button class="jp-next" tabindex="0"><i class="fa fa-forward"></i></button>
+							</div>
+						</div>
+						<div id="nowPlaying" class="nowPlaying">
+							<span class="artist-name"></span>
+							<span class="track-name"></span>
+						</div>
+						<div class="jp-gui jp-interface right-controls">
+							<div class="jp-controls">
+								<button class="jp-mute" tabindex="0"><i class="fa fa-volume-up"></i></button>
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+								<button id="playlist-toggle"><i class="fa fa-bars"></i></button>
+							</div>
+						</div>
+						<div id="main-player-playlist" class="jp-playlist fulscreen-playlist">
+							<div class="container playlist-container">
+								<div class="col-lg-10 col-lg-offset-1 playlist-btn-container"><button id="close-playlist"><i class="fa fa-close"></i></button></div>
+								<ul class="col-lg-10 col-lg-offset-1">
+									<li>&nbsp;</li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Adrift EP Album -->
+
+		<div class="albums-home-wrapper">
+			<div class="overlay-section">
+				<div class="container section">
+					<div class="section-title pdb-30">
+						<p id="EP">Out Now!</p>
+						<div class="sep"></div>
+						<h2>LASTEST EP</h2>
+					</div>
+
+					<div class="album-single-page-wrapper">
+						<div class="row album-single">
+							<h2 class="album-name col-xs-12">ADRIFT - EP</h2>
+							<div class="col-md-4 col-sm-5 clearfix">
+								<div class="bordered">
+									<img src="img/adriftEP.jpg" alt="Adrift EP Album Cover Photo" class="img-responsive">
+								</div>
+								<div class="description">
+									<h4 class="title">Album Info</h4>
+									<ul class="meta">
+										<li class="clearfix"><span>Artist:</span><span>Dan Atkinson & Bill Johnson</span></li>
+										<li class="clearfix"><span>Release Date:</span><span>June 8th 2018</span></li>
+										<li class="clearfix"><span>Genre:</span><span>Electronic, Vocal, Uplifiting</span></li>
+										<li class="clearfix"><span>Produced by:</span><span>M3DL3Y</span></li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="col-md-8 col-sm-7">
+								<div class="default-player">
+									<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+									<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+										<div class="jp-type-playlist">
+											<div class="jp-gui jp-interface_2">
+												<div class="player-bar">
+													<div class="jp-controls">
+														<button class="jp-previous" tabindex='0'><i class="fa fa-backward"></i></button>
+														<button class="jp-play" tabindex='0'><i class="fa fa-play"></i></button>
+														<button class="jp-next" tabindex="0"><i class="fa fa-forward"></i></button>
+														<button class="jp-mute" tabindex="0"><i class="fa fa-volume-up"></i></button>
+													</div>
+													<div id="nowPlaying_2" class="nowPlaying">
+														<span class="artist-name"></span>
+														<span class="track-name"></span>
+													</div>
+													<div class="jp-progress">
+														<div class="jp-seek-bar">
+															<div class="jp-play-bar"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="main-player-playlist-2" class="jp-playlist">
+												<ul>
+													<li class="clearfix">&nbsp;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="description">
+									<h4 class="title">Welcome to ADRIFT!!!</h4>
+									<p>
+
+										Combining elements of Dubstep and Future Bass, this hard hitting collection is the first of many extended plays from your favourite Producer Duo. The intergalactic theme gave birth to 4 very different feeling tracks that pushed our abilities and taught
+										us even more. Check it out for dirty bass and spacey vibes.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- The Band-->
+		<div class="artists-home-wrapper">
+			<div class="overlay-section">
+				<div class="container section">
+					<div class="section-title">
+						<h2>The Band</h2>
+						<div class="sep"></div>
+						<p>We are M3DL3Y from Castleford, England. We make Dubstep and Bass music. Tune in for original music and entertainment videos on music production.</p>
+					</div>
+
+					<div class="row-centered artists section">
+						<div class="col-sm-6 theband">
+							<div class="artist bordered hover-effect">
+								<div class="overlay"></div>
+								<img class="img-responsive" src="img/bg-1.jpg" alt="">
+								<div class="info-block">
+									<img class="img-responsive" src="img/Dan.jpg" alt="">
+									<h3>Dan Atkinson</h3>
+									<h5>Producer</h5>
+									<div class="show-on-hover">
+										<p>One good thing about music, when it hits you, you feel no pain. Producing EDM madness since 2k10.</p>
+										<ul class="social-networks no-bg">
+											<li><a class="fa fa-facbook" href="https://www.facebook.com/banshebot"></a></li>
+											<li><a class="fa fa-twitter" href="https://twitter.com/Banshebot"></a></li>
+											<li><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_dan/"></a></li>
+											<li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCtDYoo2ZrqlO94mp1d9GRZA/featured"></a></li>
+											<li><a class="fa fa-spotify" href="https://open.spotify.com/artist/7hKuZOxTEll78MnhCh1GRz"></a></li>
+											<li><a class="fa fa-soundcloud" href="https://soundcloud.com/official-m3dl3y"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 theband">
+							<div class="artist bordered hover-effect">
+								<div class="overlay"></div>
+								<img class="img-responsive" src="img/bg-2.jpg" alt="">
+								<div class="info-block">
+									<img class="img-responsive" src="img/Bill.jpg" alt="">
+									<h3>Billy Johnson</h3>
+									<h5>Producer</h5>
+									<div class="show-on-hover">
+										<p>Being born blind was only a minor set back to me becoming the worlds leading producer. Hitting the gear hard every night has helped.</p>
+										<ul class="social-networks no-bg">
+											<li><a class="fa fa-facbook" href="https://www.facebook.com/william.a.johnson.7"></a></li>
+											<li><a class="fa fa-twitter" href="https://twitter.com/M3DL3Ymusic"></a></li>
+											<li><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_billbo/"></a></li>
+											<li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCtDYoo2ZrqlO94mp1d9GRZA/featured"></a></li>
+											<li><a class="fa fa-spotify" href="https://open.spotify.com/artist/7hKuZOxTEll78MnhCh1GRz"></a></li>
+											<li><a class="fa fa-soundcloud" href="https://soundcloud.com/official-m3dl3y"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Gallery -->
+		<div class="gallery-home-wrapper">
+			<div class="container section">
+				<div class="section-title pdb-60">
+					<h2>
+						<span class="title-lines left"></span> Gallery
+						<span class="title-lines right"></span>
+					</h2>
+				</div>
+				<div class="gallery-container-wrapper">
+					<div id="gallery-container" class="gallery-container masonry_wrapper">
+						<div class="gallery-item">
+							<a href="img/pic1-big.jpg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/pic1.jpg" alt="Band photo Dan and Bill">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item double">
+							<a href="img/big-band4.jpeg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/band4.jpeg" alt="Band photo Dan and Bill 2">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item">
+							<a href="img/pic-big.jpg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/pic.jpg" alt="Band Merchandise">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item">
+							<a href="img/big-band3.jpeg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/band3.jpeg" alt="Bill Johnson Band Member">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item">
+							<a href="img/big-band5.jpeg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/band5.jpeg" alt="Dan Atkinson Band Member">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item">
+							<a href="img/big-band6.jpeg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+							<img class="img-responsive" src="img/band6.jpeg" alt="Band Photo">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item double">
+							<a href="img/big-band8.jpeg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/band8.jpeg" alt="">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+						<div class="gallery-item">
+							<a href="img/people-big.jpg" class="nivo-trigger" data-lightbox-gallery="gallery1">
+								<img class="img-responsive" src="img/people.jpg" alt="Band Member and friends">
+								<div class="overlay">
+									<i class="fa fa-plus"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact -->
+		<div class="contact-home-wrapper">
+			<div class="overlay-section">
+				<div class="container section">
+					<div class="section-title pdb-60">
+						<h2>Get in Touch</h2>
+						<div class="sep"></div>
+						<p>You can fill out the form below to send us a email. </p>
+					</div>
+					<div class="row contact-from">
+						<form class="col-xs-12 general-form clearfix" action="contact.php" method="post" name="contact" id="contact-form">
+							<div class="field-group row">
+								<div class="field col-sm-4">
+									<h5>Your Name <span>*</span></h5>
+									<input name="name" type="text" class="required" title="Please type your name." placeholder="Name...">
+								</div>
+								<div class="field col-sm-4">
+									<h5>Your Email <span>*</span></h5>
+									<input name="email" type="text" class="required" title="Please type your email." placeholder="Email...">
+								</div>
+								<div class="field col-sm-4">
+									<h5>Your Subject</h5>
+									<input name="Subject" type="text" placeholder="Subject...">
+								</div>
+							</div>
+							<div class="field">
+								<h5>Your Message <span>*</span></h5>
+								<textarea name="message" cols="15" rows="5" class="required" placeholder="Message..." title="Please type a message."></textarea>
+							</div>
+							<button class="btn big"><i class="fa fa-paper-plane"></i>Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Newsletter  -->
+		<div class="newsletter-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="title-block col-xs-12 col-sm-6">
+						<i class="fa fa-envelope"></i>
+						<h2 class="newsletter-title">NEWSLETTER</h2>
+					</div>
+					<div class="form-block col-xs-12 col-sm-6">
+						<div id="mc_embed_signup">
+							<form action="//gygsdesign.us13.list-manage.com/subscribe/post?u=2507fc14e180868221f4b663d&amp;id=bff66133bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<div class="mc-field-group">
+										<input type="email" value="" name="EMAIL" class="required email emailinput" id="mce-EMAIL" placeholder="Enter Your E-mail Here...">
+										<div class="button-wrap"><button name="subscribe" type="submit" class="button" id="mc-embedded-subscribe">Subscribe</button></div>
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;"><input type="text" name="b_94c004fbd08face605b799ad9_60beb53d8e" tabindex="-1" value=""></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Footer -->
+		<footer id="colophon">
+			<div class="container">
+				<div class="row">
+					<div class="widget col-sm-4 about-widget ">
+						<h4 class="widget-title">About US</h4>
+						<div class="widget-content">
+							<p>We are M3DL3Y from Castleford, England. We make Dubstep and Bass music. Tune in for original music and entertainment videos on music production. </p>
+							<ul class="social-networks bg clearfix">
+								<li><a class="fa fa-facbook" href="https://www.facebook.com/officialm3dl3y/"></a></li>
+								<li><a class="fa fa-twitter" href="https://twitter.com/M3DL3Ymusic"></a></li>
+								<li data-toggle="tooltip" data-placement="top" title="Dan"><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_dan"></a></li>
+								<li data-toggle="tooltip" data-placement="top" title="Bill"><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_billbo/"></a></li>
+								<li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCtDYoo2ZrqlO94mp1d9GRZA/featured"></a></li>
+								<li><a class="fa fa-spotify" href="https://open.spotify.com/artist/7hKuZOxTEll78MnhCh1GRz"></a></li>
+								<li><a class="fa fa-soundcloud" href="https://soundcloud.com/official-m3dl3y"></a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="widget col-sm-4 instagram-widget">
+						<h4 class="widget-title">Instagram Bill</h4>
+						<ul id="footer-insta-bill" class="clearfix"></ul>
+					</div>
+
+					<div class="widget col-sm-4 instagram-widget">
+						<h4 class="widget-title">Instagram Dan</h4>
+						<ul id="footer-insta-dan" class="clearfix"></ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bar">
+				<div class="container relative-pos z-index">
+					<p class="col-sm-6">Copyright 2018 <a href="#">M3DL3Y</a> | All rights Reserved</p>
+				</div>
+			</div>
+	</div>
+	</footer>
+
+	<!-- Go to top button -->
+	<div id="back-to-top" class="fa fa-arrow-circle-up"></div>
+	<div id="pause-player" class="fa fa-play-circle"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery2.min.js"></script>
+
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/jplayer/jplayer/jquery.jplayer.min.js"></script>
+	<script src="assets/jplayer/add-on/jplayer.playlist.js"></script>
+	<script src="assets/owl-carousel/owl.carousel.min.js"></script>
+	<script src="assets/js/countdown.js"></script>
+	<script src="assets/js/twitterFetcher.js"></script>
+	<script src="assets/js/instafeed.min.js"></script>
+	<script src="assets/js/instafeed.min.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<script src="assets/js/nivo-lightbox.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/mc.validate.js"></script>
+	<!-- RS5.0 Core JS Files -->
+	<script src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<!-- END RS5.0 Core JS Files -->
+		<script src="assets/js/custom_js.js"></script>
+
+	<script>
+		jQuery(document).ready(function($) {
+			"use strict";
+			// First Player
+			var changeTrack = function changeTrack(event) {
+				var current = myPlaylist.current,
+					playlist = myPlaylist.playlist;
+				$.each(playlist, function(index, obj) {
+					if (index == current) {
+						$("#nowPlaying .artist-name").html(obj.artist);
+						$("#nowPlaying .track-name").html(obj.title);
+					}
+				});
+			};
+
+			var myPlaylist = new jPlayerPlaylist({
+				jPlayer: "#jquery_jplayer_1",
+				cssSelectorAncestor: "#jp_container_1",
+			}, [{
+					artist: "M3DL3Y",
+					title: "Lose It",
+					mp3: "assets/music/LoseIt.mp3",
+					oga: "assets/music/LoseIt.ogg",
+					poster: "img/elements/WebWheel.png",
+					free: true
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Spicy",
+					mp3: "assets/music/Spicy.mp3",
+					oga: "assets/music/Spicy.ogg",
+					poster: "img/elements/WebWheel.png",
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Monsoon",
+					mp3: "assets/music/Monsoon.mp3",
+					oga: "assets/music/Monsoon.ogg",
+					poster: "img/elements/WebWheel.png",
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Pineapple",
+					mp3: "assets/music/Pineapple.mp3",
+					oga: "assets/music/Pineapple.ogg",
+					poster: "img/elements/WebWheel.png",
+				}
+
+			], {
+				playlistOptions: {
+					enableRemoveControls: true
+				},
+				swfPath: "assets/jplayer/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: false,
+				keyEnabled: true,
+				size: {
+					width: "120px",
+					height: "120px"
+				},
+				ready: changeTrack,
+				play: function(event) {
+					changeTrack();
+					var $mythis = $(this);
+					$mythis.removeClass('spin-disk');
+					setTimeout(function() { $mythis.addClass('spin-disk'); }, 100);
+				},
+				pause: function(event) {
+					$(this).removeClass('spin-disk');
+				}
+			});
+		}); //end .ready
+	</script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			"use strict";
+			// Second Player
+			var changeTrack2 = function changeTrack(event) {
+				var current = myPlaylist_2.current,
+					playlist = myPlaylist_2.playlist;
+				$.each(playlist, function(index, obj) {
+					if (index == current) {
+						$("#nowPlaying_2 .artist-name").html(obj.artist);
+						$("#nowPlaying_2 .track-name").html(obj.title);
+					}
+				});
+			};
+
+			var myPlaylist_2 = new jPlayerPlaylist({
+				jPlayer: "#jquery_jplayer_2",
+				cssSelectorAncestor: "#jp_container_2",
+			}, [
+				// This playlist doesn't require poster image
+				{
+					artist: "M3DL3Y",
+					title: "Adrift",
+					mp3: "assets/music/Adrift.mp3",
+					oga: "assets/music/Adrift.ogg",
+					free: true
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Airlock",
+					mp3: "assets/music/Airlock.mp3",
+					oga: "assets/music/Airlock.ogg",
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Constellation",
+					mp3: "assets/music/Constellation.mp3",
+					oga: "assets/music/Constellation.ogg",
+				},
+				{
+					artist: "M3DL3Y",
+					title: "Solar",
+					mp3: "assets/music/Solar.mp3",
+					oga: "assets/music/Solar.ogg",
+				}
+
+			], {
+				playlistOptions: {
+					enableRemoveControls: true
+				},
+				swfPath: "assets/jplayer/jplayer",
+				supplied: "oga, mp3",
+				wmode: "window",
+				useStateClassSkin: true,
+				autoBlur: false,
+				smoothPlayBar: false,
+				keyEnabled: true,
+				ready: changeTrack2,
+				play: changeTrack2,
+			});
+
+		}); //end .ready
+	</script>
+
+</body>
+
+</html>
