@@ -2,10 +2,10 @@
 
 @font-face {
   font-family: 'exquisite_corpseregular';
-  src: url('../../css/exquisite_corpse-webfont.woff2') format('woff2'),
-  url('../../css/exquisite_corpse-webfont.woff') format('woff'),
-  url('../../css/exquisite_corpse-webfont.ttf') format('truetype'),
-  url('../../css/exquisite_corpse-webfont.svg#exquisite_corpseregular') format('svg');
+  src: url('../../font/exquisite_corpse-webfont.woff2') format('woff2'),
+  url('../../font/exquisite_corpse-webfont.woff') format('woff'),
+  url('../../font/exquisite_corpse-webfont.ttf') format('truetype'),
+  url('../../font/exquisite_corpse-webfont.svg#exquisite_corpseregular') format('svg');
   font-weight: normal;
   font-style: normal;
 
@@ -4034,7 +4034,7 @@ p {
   left: 0;
   width: 100%;
   padding: 15px 0;
-  background: rgba(11, 13, 19, 0.95);
+  background: rgba(11, 13, 19, 0.5);
   padding-left: 75px;
 }
 
