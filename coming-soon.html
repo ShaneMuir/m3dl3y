@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Coming soon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Coming Soon</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 	<!-- Google Fonts -->
@@ -17,6 +17,61 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+	
+		<header id="site-header">
+		<form action="#" id="search-header" name="search-header">
+			<input type="search" name="search" placeholder="Type and Hit Enter..">
+			<button>Search</button>
+		</form>
+		<div class="container nav-wrapper">
+			<!-- Logo -->
+			<div class="site-branding">
+				<a href="index.html">
+					<span class="first-word colored">M3DL3Y</span>
+				</a>
+			</div>
+			<!-- Main Mneu -->
+			<nav id="site-navigation" class="site-navigation">
+				<ul id="main-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="has-child">
+						<a href="#">About</a>
+						<ul class="submenu">
+							<li class="has-child">
+								<a href="#">Biography</a>
+								<ul class="submenu">
+									<li><a href="biography-dan.html">Dan</a></li>
+									<li><a href="biography-bill.html">Bill</a></li>
+								</ul>
+						</ul>
+						</li>
+						<li class="">
+							<a href="#">Music</a>
+						</li>
+						<li class="">
+							<a href="video-gallery.html">Video Gallery</a>
+						</li>
+						<li class="has-child active">
+							<a href="#">Out Now!</a>
+							<ul class="submenu">
+								<li><a href="out-now.html">Withdrawn</a></li>
+								<li><a href="coming-soon.html">Coming Soon</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Extra Nav -->
+			<div class="extra-nav">
+				<button id="search-toggle"><i class="fa fa-search"></i></button>
+				<button id="menu-toggle"><i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+	</header>
+
 		
 	<!-- Coming Soon -->
 	<div class="coming-soon-page-wrapper">
@@ -43,6 +98,48 @@
 			</div>
 		</div>
 	</div>
+	
+			<footer id="colophon">
+			<div class="container">
+				<div class="row">
+					<div class="widget col-sm-4 about-widget ">
+						<h4 class="widget-title">About US</h4>
+						<div class="widget-content">
+							<p>We are M3DL3Y from Castleford, England. We make Dubstep and Bass music. Tune in for original music and entertainment videos on music production. </p>
+							<ul class="social-networks bg clearfix">
+								<li><a class="fa fa-facbook" href="https://www.facebook.com/officialm3dl3y/"></a></li>
+								<li><a class="fa fa-twitter" href="https://twitter.com/M3DL3Ymusic"></a></li>
+								<li data-toggle="tooltip" data-placement="top" title="Dan"><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_dan"></a></li>
+								<li data-toggle="tooltip" data-placement="top" title="Bill"><a class="fa fa-instagram" href="https://www.instagram.com/m3dl3y_billbo/"></a></li>
+								<li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCtDYoo2ZrqlO94mp1d9GRZA/featured"></a></li>
+								<li><a class="fa fa-spotify" href="https://open.spotify.com/artist/7hKuZOxTEll78MnhCh1GRz"></a></li>
+								<li><a class="fa fa-soundcloud" href="https://soundcloud.com/official-m3dl3y"></a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="widget col-sm-4 instagram-widget">
+						<h4 class="widget-title">Instagram Bill</h4>
+						<ul id="footer-insta-bill" class="clearfix"></ul>
+					</div>
+
+					<div class="widget col-sm-4 instagram-widget">
+						<h4 class="widget-title">Instagram Dan</h4>
+						<ul id="footer-insta-dan" class="clearfix"></ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bar">
+				<div class="container relative-pos z-index">
+					<p class="col-sm-6">Copyright 2018 <a href="#">M3DL3Y</a> | All rights Reserved</p>
+				</div>
+			</div>
+	</div>
+	</footer>
+
+		<!-- Go to top button -->
+		<div id="back-to-top" class="fa fa-arrow-circle-up"></div>
+	
 		
 	
 
