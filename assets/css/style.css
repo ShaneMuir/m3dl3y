@@ -384,8 +384,19 @@ p {
 .overlay-section {
   display: block;
   width: 100%;
-  background: rgba(11, 13, 19, 0.9);
+ background: rgba(13, 11, 19, 0.4); 
 }
+
+.overlay-section-background {
+  display: block;
+  width: 100%;
+ background: rgba(13, 11, 19, 0.9); 
+}
+
+.spotify iframe {
+  margin-top: 10vh;
+}
+
 
 .overlay-section.low-opacity {
   background: rgba(11, 13, 19, 0.4);
@@ -409,17 +420,44 @@ p {
 
 .section-title h2 {
   text-transform: uppercase;
+  font-weight: normal;
+}
+
+.band-title {
+  font-family: 'exquisite_corpseregular';
+  font-size: 50px;
+}
+
+#EP {
+  font-size: 20px;
   font-weight: 700;
+  color: white;
+}
+
+.padtop {
+ margin-top:30px !important;
 }
 
 .section-title .sep {
   display: block;
   width: 55px;
-  height: 2px;
+  height: 3px;
+  background: #fff;
+  margin: 30px auto;
+  margin-top: 20px;
+}
+
+.sep {
+  display: block;
+  width: 55px;
+  height: 3px;
   background: #fff;
   margin: 20px auto;
 }
 
+.sub-heading {
+  font-weight: 500;
+}
 .section-title p {
   font-family: 'Poppins', sans-serif;
   padding: 0 15%;
@@ -477,6 +515,8 @@ p {
   display: block;
   float: left;
   margin-right: 5px;
+  bottom: 0;
+  align-items: flex-end;
 }
 
 .social-networks.bg li a {
@@ -518,6 +558,12 @@ p {
   color: #7300AC;
 }
 
+@media (max-width: 768px){
+  .extra-nav iframe {
+ display: none;
+} 
+}
+
 /*--------------------------------------------------------------
 1.5 - Page Headers
 --------------------------------------------------------------*/
@@ -525,8 +571,9 @@ p {
 .page-header {
   text-align: center;
   background-size: cover;
-  background: #0b0d13 url(../img/backgrounds/bg-8.jpg) no-repeat fixed center center;
+  background: #0b0d13 url(../../img/elements/hd-banner.jpg) no-repeat center center;
 }
+
 
 .page-header .page-header-section {
   padding-top: 85px;
@@ -534,8 +581,10 @@ p {
 }
 
 .page-header h1 {
+  font-family: 'exquisite_corpseregular', sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: lighter;
+  font-size: 50px;
 }
 
 /* Biography Page Header */
@@ -3109,6 +3158,11 @@ p {
   margin-bottom: 0;
 }
 
+ .social-networks {
+   margin-top: 2vh;
+ }
+
+
 .sidebar .widget .sep {
   width: 50px;
   height: 2px;
@@ -4024,6 +4078,13 @@ p {
 13.0 - Video Gallery
 --------------------------------------------------------------*/
 
+.bord {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
 .gallery-video-wrapper {
   margin-bottom: 30px;
 }
@@ -4190,8 +4251,9 @@ p {
 .newsletter-wrapper .title-block .newsletter-title {
   float: left;
   line-height: 65px;
-  font-weight: 700;
+  font-weight: normal;
   padding-left: 15px;
+  font-size: 40px;
 }
 
 @media all and (min-width: 768px) {
