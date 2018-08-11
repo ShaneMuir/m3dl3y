@@ -558,10 +558,16 @@ p {
   color: #7300AC;
 }
 
-@media (max-width: 768px){
+@media (max-width: 990px){
   .extra-nav iframe {
  display: none;
 } 
+}
+
+@media (min-width: 991px){
+  .hideme{
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -961,6 +967,7 @@ p {
   display: block;
 }
 
+@media (max-width: 990px){
 #site-header .extra-nav {
   display: block;
   position: absolute;
@@ -969,6 +976,16 @@ p {
   padding-top: 28px;
   width: 70px;
 }
+}
+
+#site-header .extra-nav {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 70px;
+}
+
 
 #site-header .extra-nav button {
   display: block;
