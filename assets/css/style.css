@@ -11,56 +11,10 @@
 
 }
 
-/* ==== Table of contents ====
-    0.0  - Less and General Styles
-    1.0  - UI elements
-        1.1- Overlay
-        1.2 - Section Title
-        1.3 - Bordered Image
-        1.4 - Social Netwroks
-        1.5 - Page Headers
-        1.7 - Pagination
-        1.8 - Filter
-        1.9 - Nivo Lightbox 
-    2.0  - Navigation
-    3.0  - Rvolution Slider
-    4.0 - Home Music Player
-        4.1 - Default Music Player
-    5.0 - Single Album
-        5.1 - Album Home
-        5.2 - Album page
-    6.0 - Band Members
-        6.1 - Artist Single
-        6.2 - Biography
-    7.0 - Radio Schedule
-    8.0 - Podcast Post
-    9.0 - Blog Post Home
-        9.1 - Blog Pages
-        9.2 - Comments
-        9.3 - Sidebar
-    10.0 - Gallery
-    11.0 - Event Countdown
-        11.1 - Event multiple
-        11.2 - Event single
-        11.3 - Event Page Wrapper
-        11.4 - Events Page
-    12.0 - Shop Product
-        12.1 - Shop Single
-        12.2 - Shop Page Wrapper
-        12.3 - Shop Sidebar
-    13.0 - Video Gallery
-    14.0 - Contact Form
-    15.0 - Newsletter
-    16.0 - 404 Page
-    17.0 - Cart Page
-    18.0 - Coming Soon Page
-    19.0 - Footer
-    20.0 - Less Variables and mixins
- =============================*/
-
 /*--------------------------------------------------------------
 0.0 - General Styles
 --------------------------------------------------------------*/
+
 ::selection {
   background: #7300AC;
 }
@@ -384,18 +338,26 @@ p {
 .overlay-section {
   display: block;
   width: 100%;
- background: rgba(13, 11, 19, 0.4); 
+  background: rgba(13, 11, 19, 0.4);
 }
 
 .overlay-section-background {
   display: block;
   width: 100%;
- background: rgba(13, 11, 19, 0.9); 
+  background: rgba(13, 11, 19, 0.9);
 }
 
 .spotify iframe {
   margin-top: 10vh;
 }
+
+@media (max-width: 767px) {
+  .spotify iframe {
+    margin-top: 0;
+  }
+}
+
+
 
 
 .overlay-section.low-opacity {
@@ -435,7 +397,7 @@ p {
 }
 
 .padtop {
- margin-top:30px !important;
+  margin-top: 30px !important;
 }
 
 .section-title .sep {
@@ -458,6 +420,7 @@ p {
 .sub-heading {
   font-weight: 500;
 }
+
 .section-title p {
   font-family: 'Poppins', sans-serif;
   padding: 0 15%;
@@ -508,7 +471,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-1.4 - Social Netwroks
+1.4 - Social Networks
 --------------------------------------------------------------*/
 
 .social-networks.bg li {
@@ -558,17 +521,6 @@ p {
   color: #7300AC;
 }
 
-@media (max-width: 990px){
-  .extra-nav iframe {
- display: none;
-} 
-}
-
-@media (min-width: 991px){
-  .hideme{
-    display: none;
-  }
-}
 
 /*--------------------------------------------------------------
 1.5 - Page Headers
@@ -859,7 +811,7 @@ p {
 
 }
 
-#site-header .site-branding a span:hover{
+#site-header .site-branding a span:hover {
   color: #7300AC;
 }
 
@@ -967,7 +919,6 @@ p {
   display: block;
 }
 
-@media (max-width: 990px){
 #site-header .extra-nav {
   display: block;
   position: absolute;
@@ -976,16 +927,6 @@ p {
   padding-top: 28px;
   width: 70px;
 }
-}
-
-#site-header .extra-nav {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 15px;
-  width: 70px;
-}
-
 
 #site-header .extra-nav button {
   display: block;
@@ -2037,16 +1978,16 @@ p {
 .artists-home-wrapper {
   background: #0b0d13 url(../../img/dj2.jpeg) no-repeat fixed center center !important;
 }
-.theband{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: relative;
+
+.theband {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 
 /* Album Home 2*/
-
 
 .album-single-home-wrapper {
   background: #0b0d13 url(../img/backgrounds/bg-4.jpg) no-repeat fixed center center;
@@ -3175,9 +3116,9 @@ p {
   margin-bottom: 0;
 }
 
- .social-networks {
-   margin-top: 2vh;
- }
+.social-networks {
+  margin-top: 2vh;
+}
 
 
 .sidebar .widget .sep {
@@ -4389,178 +4330,6 @@ p {
   margin-top: 25px;
 }
 
-/*--------------------------------------------------------------
-17.0 - Cart Page
---------------------------------------------------------------*/
-
-.cart-page-wrapper .cart {
-  width: 100%;
-  position: relative;
-}
-
-.cart-page-wrapper .cart thead {
-  background: #141620;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.cart-page-wrapper .cart thead tr th {
-  text-align: left;
-  padding: 25px 0;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.cart-page-wrapper .cart tbody tr {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.cart-page-wrapper .cart tbody tr td:first-child {
-  padding: 45px 0;
-}
-
-.cart-page-wrapper .cart tbody tr:last-child {
-  background: #141620;
-  border-bottom: none;
-}
-
-.cart-page-wrapper .cart tbody tr:last-child td {
-  padding: 25px 50px;
-}
-
-.cart-page-wrapper .cart tbody tr td span,
-.cart-page-wrapper .cart tbody tr td a {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 600;
-  color: #cccccc;
-}
-
-.cart-page-wrapper .cart tbody tr td a {
-  color: #e6e6e6;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.cart-page-wrapper .cart tbody tr td a:hover,
-.cart-page-wrapper .cart tbody tr td a:focus {
-  color: #7300AC;
-}
-
-@media screen and (max-width: 991px) {
-  .cart-page-wrapper .cart tbody tr td {
-    padding: 45px 0;
-  }
-}
-
-.cart-page-wrapper .cart .product-thumbnail {
-  width: 20%;
-  text-align: center;
-}
-
-@media screen and (max-width: 991px) {
-  .cart-page-wrapper .cart .product-thumbnail {
-    display: none;
-  }
-}
-
-.cart-page-wrapper .cart .product-name {
-  width: 30%;
-}
-
-.cart-page-wrapper .cart .product-price {
-  width: 15%;
-}
-
-.cart-page-wrapper .cart .product-quantity {
-  width: 20%;
-}
-
-.cart-page-wrapper .cart .product-quantity .qta-control .field {
-  margin-bottom: 0;
-}
-
-.cart-page-wrapper .cart .product-quantity .qta-control .field input {
-  width: 65px;
-  margin: 0 15px;
-  height: 30px;
-}
-
-.cart-page-wrapper .cart .product-quantity .qta-control input,
-.cart-page-wrapper .cart .product-quantity .qta-control .dec,
-.cart-page-wrapper .cart .product-quantity .qta-control .inc {
-  float: left;
-  line-height: 30px;
-}
-
-.cart-page-wrapper .cart .product-subtotal {
-  width: 10%;
-}
-
-.cart-page-wrapper .cart .product-remove {
-  width: 5%;
-}
-
-.cart-page-wrapper .cart .actions {
-  position: relative;
-  padding: 25px 195px 25px 50px;
-}
-
-.cart-page-wrapper .cart .actions .coupon {
-  width: 100%;
-}
-
-.cart-page-wrapper .cart .actions .coupon .field {
-  margin: 0;
-}
-
-.cart-page-wrapper .cart .actions .coupon input {
-  float: left;
-  width: 45%;
-  height: 40px;
-}
-
-.cart-page-wrapper .cart .actions .coupon button {
-  margin-left: 15px;
-}
-
-.cart-page-wrapper .cart .actions .update {
-  display: block;
-  position: absolute;
-  right: 45px;
-  top: 25px;
-  width: 150px;
-}
-
-.cart-page-wrapper .cart .actions .update button {
-  float: right;
-}
-
-@media all and (max-width: 767px) {
-  .cart-page-wrapper .cart .actions {
-    padding: 25px 50px;
-  }
-  .cart-page-wrapper .cart .actions .coupon input {
-    float: none;
-    width: auto;
-  }
-  .cart-page-wrapper .cart .actions .coupon button {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-  .cart-page-wrapper .cart .actions .update {
-    position: relative;
-    float: left;
-    right: auto;
-    top: auto;
-    margin-top: 10px;
-  }
-  .cart-page-wrapper .cart .actions .update button {
-    float: none;
-  }
-}
 
 /*--------------------------------------------------------------
 18.0 - Coming Soon Page
@@ -5055,6 +4824,7 @@ p {
   }
 }
 
+
 .section {
   display: block;
   position: relative;
@@ -5062,66 +4832,75 @@ p {
   padding-bottom: 110px;
 }
 
-.section.pdt-70 {
-  padding-top: 70px;
+@media (max-width: 400px) {
+  .section {
+    display: block;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
 }
 
-.social-networks li a[href*="facebook."]:before {
-  content: '\f09a';
-}
+  .section.pdt-70 {
+    padding-top: 70px;
+  }
 
-.social-networks li a[href*="twitter."]:before {
-  content: '\f099';
-}
+  .social-networks li a[href*="facebook."]:before {
+    content: '\f09a';
+  }
 
-.social-networks li a[href*="soundcloud."]:before {
-  content: '\f1be';
-}
+  .social-networks li a[href*="twitter."]:before {
+    content: '\f099';
+  }
 
-.social-networks li a[href*="instagram."]:before {
-  content: '\f16d';
-}
+  .social-networks li a[href*="soundcloud."]:before {
+    content: '\f1be';
+  }
 
-.social-networks li a[href*="youtube."]:before {
-  content: '\f16a';
-}
+  .social-networks li a[href*="instagram."]:before {
+    content: '\f16d';
+  }
 
-.social-networks li a[href*="vimeo."]:before {
-  content: '\f27d';
-}
+  .social-networks li a[href*="youtube."]:before {
+    content: '\f16a';
+  }
 
-.social-networks li a[href*="odnoklassniki."]:before {
-  content: '\f263';
-}
+  .social-networks li a[href*="vimeo."]:before {
+    content: '\f27d';
+  }
 
-.social-networks li a[href*="pinterest."]:before {
-  content: '\f0d2';
-}
+  .social-networks li a[href*="odnoklassniki."]:before {
+    content: '\f263';
+  }
 
-.social-networks li a[href*="linkedin."]:before {
-  content: '\f0e1';
-}
+  .social-networks li a[href*="pinterest."]:before {
+    content: '\f0d2';
+  }
 
-.social-networks li a[href*="behance."]:before {
-  content: '\f1b4';
-}
+  .social-networks li a[href*="linkedin."]:before {
+    content: '\f0e1';
+  }
 
-.social-networks li a[href*="amazon."]:before {
-  content: '\f270';
-}
+  .social-networks li a[href*="behance."]:before {
+    content: '\f1b4';
+  }
 
-.social-networks li a[href*="apple."]:before {
-  content: '\f179';
-}
+  .social-networks li a[href*="amazon."]:before {
+    content: '\f270';
+  }
 
-.social-networks li a[href*="google."]:before {
-  content: '\f1a0';
-}
+  .social-networks li a[href*="apple."]:before {
+    content: '\f179';
+  }
 
-.social-networks li a[href*="spotify."]:before {
-  content: '\f1bc';
-}
+  .social-networks li a[href*="google."]:before {
+    content: '\f1a0';
+  }
 
-.social-networks li a[href*="tumblr."]:before {
-  content: '\f173';
-}
+  .social-networks li a[href*="spotify."]:before {
+    content: '\f1bc';
+  }
+
+  .social-networks li a[href*="tumblr."]:before {
+    content: '\f173';
+  }

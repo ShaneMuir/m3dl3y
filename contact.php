@@ -7,7 +7,7 @@ $field_message = $_POST['message'];
 // Replace with your email adress here
 $mail_to = 'contact@m3dl3y.com';
 
-$subject = 'Message from a site visitor '.$field_email;
+$subject = 'Message from a Medler'.$field_email;
 
 $body_message = 'From: '.$field_name."\n";
 $body_message .= 'E-mail: '.$field_email."\n";
