@@ -347,6 +347,18 @@ p {
   background: rgba(13, 11, 19, 0.9);
 }
 
+.overlay-section-background-5 {
+  display: block;
+  width: 100%;
+  background: rgba(13, 11, 19, 0.5);
+}
+
+.overlay-section-background-3 {
+  display: block;
+  width: 100%;
+  background: rgba(13, 11, 19, 0.3);
+}
+
 .spotify iframe {
   margin-top: 10vh;
 }
@@ -394,6 +406,14 @@ p {
   font-size: 20px;
   font-weight: 700;
   color: white;
+}
+
+.music-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+
 }
 
 .padtop {
@@ -676,16 +696,16 @@ p {
 
 .nivo-lightbox-overlay .nivo-lightbox-prev {
   padding-left: 20px;
-  background: url(../img/lightbox-arrow-left.png) center center no-repeat;
+  background: url(../../img/lightbox-arrow-left.png) center center no-repeat;
 }
 
 .nivo-lightbox-overlay .nivo-lightbox-next {
   padding-right: 20px;
-  background: url(../img/lightbox-arrow-right.png) center center no-repeat;
+  background: url(../../img/lightbox-arrow-right.png) center center no-repeat;
 }
 
 .nivo-lightbox-overlay .nivo-lightbox-close {
-  background: url(../img/lightbox-close.png) center center no-repeat;
+  background: url(../../img/lightbox-close.png) center center no-repeat;
   width: 65px;
   height: 65px;
 }
@@ -4041,6 +4061,10 @@ p {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.coming-soon-slogan {
+  font-weight: 700;
+}
+
 
 
 .gallery-video-wrapper {
@@ -4149,7 +4173,7 @@ p {
 /* Contact Home */
 
 .contact-home-wrapper {
-  background: #7d9aff url(../img/backgrounds/mixer.jpg) no-repeat fixed center center;
+  background: #7d9aff url(../../img/mixer.jpg) no-repeat fixed center center;
 }
 
 .contact-page-wrapper .contact-form {
@@ -4182,6 +4206,13 @@ p {
 .contact-form-page .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.contact-page-wrapper {
+  background: #0b0d13 url(../../img/mixer.jpg) no-repeat scroll center center;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -4336,7 +4367,7 @@ p {
 --------------------------------------------------------------*/
 
 .coming-soon-page-wrapper {
-  background: #0b0d13 url(../img/backgrounds/bg-9.jpg) no-repeat fixed center center;
+  background: #0b0d13 url(../../img/coming-soon/m3dl3y.jpg) no-repeat scroll center center;
   background-size: cover;
   text-align: center;
   height: 100%;
@@ -4841,66 +4872,66 @@ p {
   }
 }
 
-  .section.pdt-70 {
-    padding-top: 70px;
-  }
+.section.pdt-70 {
+  padding-top: 70px;
+}
 
-  .social-networks li a[href*="facebook."]:before {
-    content: '\f09a';
-  }
+.social-networks li a[href*="facebook."]:before {
+  content: '\f09a';
+}
 
-  .social-networks li a[href*="twitter."]:before {
-    content: '\f099';
-  }
+.social-networks li a[href*="twitter."]:before {
+  content: '\f099';
+}
 
-  .social-networks li a[href*="soundcloud."]:before {
-    content: '\f1be';
-  }
+.social-networks li a[href*="soundcloud."]:before {
+  content: '\f1be';
+}
 
-  .social-networks li a[href*="instagram."]:before {
-    content: '\f16d';
-  }
+.social-networks li a[href*="instagram."]:before {
+  content: '\f16d';
+}
 
-  .social-networks li a[href*="youtube."]:before {
-    content: '\f16a';
-  }
+.social-networks li a[href*="youtube."]:before {
+  content: '\f16a';
+}
 
-  .social-networks li a[href*="vimeo."]:before {
-    content: '\f27d';
-  }
+.social-networks li a[href*="vimeo."]:before {
+  content: '\f27d';
+}
 
-  .social-networks li a[href*="odnoklassniki."]:before {
-    content: '\f263';
-  }
+.social-networks li a[href*="odnoklassniki."]:before {
+  content: '\f263';
+}
 
-  .social-networks li a[href*="pinterest."]:before {
-    content: '\f0d2';
-  }
+.social-networks li a[href*="pinterest."]:before {
+  content: '\f0d2';
+}
 
-  .social-networks li a[href*="linkedin."]:before {
-    content: '\f0e1';
-  }
+.social-networks li a[href*="linkedin."]:before {
+  content: '\f0e1';
+}
 
-  .social-networks li a[href*="behance."]:before {
-    content: '\f1b4';
-  }
+.social-networks li a[href*="behance."]:before {
+  content: '\f1b4';
+}
 
-  .social-networks li a[href*="amazon."]:before {
-    content: '\f270';
-  }
+.social-networks li a[href*="amazon."]:before {
+  content: '\f270';
+}
 
-  .social-networks li a[href*="apple."]:before {
-    content: '\f179';
-  }
+.social-networks li a[href*="apple."]:before {
+  content: '\f179';
+}
 
-  .social-networks li a[href*="google."]:before {
-    content: '\f1a0';
-  }
+.social-networks li a[href*="google."]:before {
+  content: '\f1a0';
+}
 
-  .social-networks li a[href*="spotify."]:before {
-    content: '\f1bc';
-  }
+.social-networks li a[href*="spotify."]:before {
+  content: '\f1bc';
+}
 
-  .social-networks li a[href*="tumblr."]:before {
-    content: '\f173';
-  }
+.social-networks li a[href*="tumblr."]:before {
+  content: '\f173';
+}
