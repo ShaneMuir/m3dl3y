@@ -4367,7 +4367,7 @@ p {
 --------------------------------------------------------------*/
 
 .coming-soon-page-wrapper {
-  background: #0b0d13 url(../../img/coming-soon/frontpage.jpg) no-repeat scroll center center;
+  background: #0b0d13 url(../../img/coming-soon/frontpage.jpg) no-repeat fixed center center;
   background-size: cover;
   text-align: center;
   height: 100%;
